@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import datetime
+
+# Step 1: Take input and split it
+month, day, year = map(int, input().split())
+
+# Step 2: Create date object
+date_obj = datetime.date(year, month, day)
+
+# Step 3: Get the day of the week in full form (e.g., 'Wednesday')
+day_name = date_obj.strftime("%A")
+
+# Step 4: Convert to uppercase and print
+print(day_name.upper())
